@@ -6,5 +6,8 @@
   "scripts": {
     "build": "tsc",
     "start": "node ./src/index.js"
+  },
+  "dependencies": {
+    "koa": "^2.4.1"
   }
 }
