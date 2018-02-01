@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "checkJs": true,
+    "noEmit": false,
+    "experimentalDecorators": true,
+    "lib": [
+      "es2017",
+      "es2016",
+      "dom"
+    ],
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "outDir": "./src/",
+    "preserveConstEnums": true,
+    "pretty": true,
+    "removeComments": true,
+    "rootDir": "./tsrc",
+    "sourceMap": false,
+    "target": "es6",
+    "typeRoots": [
+      "node_modules/@types",
+      "node_modules/immutable/dist/immutable.d.ts",
+      "node_modules/moment/moment.d.ts",
+      "typings"
+    ]
+  },
+  "include": [
+    "tsrc/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
