@@ -5,9 +5,13 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc",
-    "start": "node ./src/index.js"
+    "start": "node ./src/index.js",
+    "heroku-postbuild": "tsc"
   },
   "dependencies": {
     "koa": "^2.4.1"
+  },
+  "engines": {
+    "node": "6.12.3"
   }
 }
