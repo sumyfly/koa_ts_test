@@ -1,5 +1,5 @@
 import * as Koa from 'koa'
-const process = global.process
+
 const app = new Koa()
 
 app.use(async (ctx, next) => {
@@ -15,5 +15,5 @@ app.use(async ctx => {
   ctx.body = 'Hello World!'
 })
 
-const port = process.env.PORT || 5000;
+const port = global.process.env.PORT || 5000;
 app.listen(port);
