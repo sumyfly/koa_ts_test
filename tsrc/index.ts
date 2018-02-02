@@ -1,5 +1,5 @@
 import * as Koa from 'koa'
-
+const process = global.process
 const app = new Koa()
 
 app.use(async (ctx, next) => {
