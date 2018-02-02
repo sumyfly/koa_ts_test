@@ -6,12 +6,15 @@
   "scripts": {
     "build": "tsc",
     "start": "node ./src/index.js",
-    "heroku-postbuild": "tsc"
+    "heroku-postbuild": "yarn --production=false && tsc"
   },
   "dependencies": {
     "koa": "^2.4.1"
   },
   "engines": {
     "node": "6.12.3"
+  },
+  "devDependencies": {
+    "typescript": "^2.7.1"
   }
 }
